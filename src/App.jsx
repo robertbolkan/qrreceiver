@@ -75,7 +75,7 @@ function App() {
       >
         {!isBowClicked && (
           <div className={`plus-container ${isBowFalling ? 'clicked' : ''}`}>
-            <img src="bow.png" alt="Bow" onClick={handleBowClick} className={`bow ${isBowFalling ? 'clicked' : ''}`} />
+            <img src="/bow.png" alt="Bow" onClick={handleBowClick} className={`bow ${isBowFalling ? 'clicked' : ''}`} />
             <div className={`horizontal-bar ${isBowFalling ? 'clicked' : ''}`}></div>
             <div className={`vertical-bar ${isBowFalling ? 'clicked' : ''}`}></div>
             <div className="gift-tag">
