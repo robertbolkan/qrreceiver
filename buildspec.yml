@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing source code dependencies...
+      - npm install
+  pre_build:
+    commands:
+      - echo Pre-build started on `date`
+      - node -v
+  build:
+    commands:
+      - echo Build started on `date`
+      - node -v
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - node -v
+artifacts:
+  files:
+    - '/**/*'
+  base-directory: 'receiver/dist'  # or 'build' or whatever your build output directory is
