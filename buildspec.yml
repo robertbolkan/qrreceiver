@@ -20,5 +20,5 @@ phases:
       - node -v
 artifacts:
   files:
-    - '/**/*'
-  base-directory: 'receiver/dist'  # or 'build' or whatever your build output directory is
+    - '**/*'
+  base-directory: 'dist'  # or 'build' or whatever your build output directory is
